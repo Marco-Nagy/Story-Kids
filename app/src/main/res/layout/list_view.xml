@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    tools:ignore="UseCompoundDrawables">
+
+    <ImageView
+        android:id="@+id/image_list"
+        android:layout_height="110dp"
+        android:layout_width="130dp"
+        android:src="@drawable/town_mouse_country"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
+    <TextView
+        android:id="@+id/text_list"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:text="The Town Mouse &amp; The Country Mouse"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:padding="2dp"
+        android:background="@color/rose"/>
+</LinearLayout>

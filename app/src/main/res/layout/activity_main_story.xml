@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainStory">
+    <TextView
+    android:id="@+id/text_title"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:text="The Town Mouse &amp; The Country Mouse"
+    android:gravity="center"
+    android:textSize="36sp"
+    android:textColor="@color/colorPrimary"
+    android:padding="2dp"
+    tools:ignore="MissingConstraints" />
+
+
+
+    <TextView
+        android:id="@+id/text_story"
+        app:layout_constraintBottom_toTopOf="@id/image_text"
+        app:layout_constraintTop_toBottomOf="@id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/the_town_mouse_amp_the_country_mouse"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:padding="2dp"
+        android:scrollbars="vertical"
+        tools:ignore="MissingConstraints"
+            />
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/image_text"
+        android:layout_height="250dp"
+        android:layout_width="wrap_content"
+        android:src="@drawable/town_mouse_country"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText,MissingConstraints" />
+    <ImageView
+
+        android:id="@+id/image_backGround"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:src="@drawable/story_time"
+        android:contentDescription="TODO"
+        android:alpha=".2"
+        tools:ignore="ContentDescription,HardcodedText,MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
